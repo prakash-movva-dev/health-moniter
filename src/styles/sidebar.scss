@@ -1,0 +1,97 @@
+.app-component-header{
+    background-color: #0a1929;
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.app-component-header-logo{
+    width: 240px;
+    border-right: 1px solid #565656;
+    padding:10px;
+}
+.app-component-header-content{
+    width: calc(100% - 240px);
+    display: flex;
+    justify-content: flex-start;
+}
+.dummy-logo-text{
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+.app-page-wrapper{
+    display: flex;
+    margin-top: 67px;
+}
+
+// sidebar css
+.app-component-sidebar{
+    .MuiDrawer-paper{
+        // border-top:1px solid #eaeaea;
+        top:66px;
+        height: calc(100% - 66px);
+        background-color: #0a1929;
+    }
+}
+.app-sidebar-menu-list{
+    display: flex;
+    flex-direction: column;
+    padding:0; 
+    margin:0;
+    list-style: none;
+}
+.app-sidebar-menu-list-item{
+    border-top: 1px solid #777777;
+    &:last-child{
+        border-bottom: 1px solid #777777;
+    }
+    .MuiAccordion-root{
+        color:#fff;
+        background-color: #0a1929;
+        border-radius: unset !important;
+        box-shadow: none;
+        .MuiAccordionSummary-content.Mui-expanded,
+        .MuiAccordionSummary-content{
+            margin: 15px 0;
+        }
+        .MuiAccordionSummary-root.Mui-expanded{
+            min-height: auto;
+        }
+        .MuiAccordionSummary-expandIconWrapper{
+            color: inherit;
+        }
+        .MuiAccordionSummary-content{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .MuiAccordionDetails-root{
+            padding-top: 0;
+        }
+    }
+}
+.sidebar-inner-link{
+    padding:5px 0 0 15px;
+    list-style: none;
+    margin: 0;
+    .sidebar-inner-link-item{
+        text-align: left;
+        font-size: 14px;
+        font-weight: normal;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+.app-page-content-heading{
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+}
