@@ -1,0 +1,38 @@
+$color_1: red;
+$background-color_1: #f2f2f2;
+$background-color_2: gray;
+$background-color_3: yellow;
+$background-color_4: red;
+
+.bordered-table {
+	border-collapse: collapse;
+	width: 100%;
+	th {
+		border: 1px solid black;
+		padding: 8px;
+		background-color: $background-color_1;
+		text-align: left;
+	}
+	td {
+		border: 1px solid black;
+		padding: 8px;
+	}
+}
+.status-circle {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+}
+.status-circle.gray {
+	background-color: $background-color_2;
+}
+.status-circle.yellow {
+	background-color: $background-color_3;
+}
+.status-circle.red {
+	background-color: $background-color_4;
+}
+.red {
+	color: $color_1;
+}

@@ -1,3 +1,6 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 export const barChartData = [
     {
       "country": "AD",
@@ -137,3 +140,66 @@ export const barChartData = [
       "color": "hsl(67, 70%, 50%)"
     }
   ]
+
+  export const plantTableData = [
+    {
+        "id": '1',
+        "status": 'Unassigned',
+        "lastStatusDate": new Date().toLocaleString(),
+        "area": 'Unassigned',
+        "unit": 'Unassigned',
+        "assetTag": 'FCV-103A',
+        "lastDateReceived": new Date().toLocaleString(),
+        "issues": <FontAwesomeIcon icon={faBell} color="red" />,
+        "processApplication": 'Wall valve FC',
+        "valveApplication": 'On/Off'
+    },
+    {
+      "id": '2',
+      "status": 'Assigned',
+      "lastStatusDate": new Date().toLocaleString(),
+      "area": 'Unassigned',
+      "unit": 'Unassigned',
+      "assetTag": 'FCV-103B',
+      "lastDateReceived": new Date().toLocaleString(),
+      "issues": <FontAwesomeIcon icon={faBell} color="red" />,
+      "processApplication": 'Wall valve FC',
+      "valveApplication": 'Modulating'
+  },
+  {
+    "id": '3',
+    "status": 'Unassigned',
+    "lastStatusDate": new Date().toLocaleString(),
+    "area": 'Unassigned',
+    "unit": 'Unassigned',
+    "assetTag": 'XV-101',
+    "lastDateReceived": new Date().toLocaleString(),
+    "issues": <FontAwesomeIcon icon={faBell} color="red" />,
+    "processApplication": 'Wall valve FC',
+    "valveApplication": 'Modulating'
+},
+{
+  "id": '4',
+  "status": 'Unassigned',
+  "lastStatusDate": new Date().toLocaleString(),
+  "area": 'Unassigned',
+  "unit": 'Unassigned',
+  "assetTag": 'PV-101',
+  "lastDateReceived": new Date().toLocaleString(),
+  "issues": <FontAwesomeIcon icon={faBell} color="red" />,
+  "processApplication": 'Wall valve FC',
+  "valveApplication": 'On/Off'
+},
+{
+  "id": '5',
+  "status": 'Assigned',
+  "lastStatusDate": new Date().toLocaleString(),
+  "area": 'Unassigned',
+  "unit": 'Unassigned',
+  "assetTag": 'PV-101',
+  "lastDateReceived": new Date().toLocaleString(),
+  "issues": <FontAwesomeIcon icon={faBell} color="red" />,
+  "processApplication": 'Wall valve FC',
+  "valveApplication": 'Modulating'
+},
+]
